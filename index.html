@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>就诊无忧</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400&amp;display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <!-- Primary Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light py-4 border-bottom border-gray bg-white">
+        <div class="container d-flex align-items-center justify-content-between"><a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="" width="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <ul class="list-inline mb-0 d-none d-lg-block">
+            <!-- <li class="list-inline-item me-3">
+              <div class="d-flex"><i class="far fa-clock h4 text-muted"></i>
+                <div class="ms-2">
+                  <h6 class="text-muted text-uppercase mb-0 text-sm">Mon - Fri: 08:00AM - 20:00PM  </h6>
+                  <p class="small text-gray mb-0">Saturday and Sunday - CLOSED</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-inline-item">
+              <div class="d-flex"><i class="fas fa-headphones-alt h4 text-muted"></i>
+                <div class="ms-2">
+                  <h6 class="text-muted text-uppercase mb-0 text-sm">+ 0800 2466 7921</h6>
+                  <p class="small text-gray mb-0">Contact Us For Help</p>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+      
+      <!-- Secondary Navbar                -->
+      <nav class="navbar navbar-expand-lg navbar-light py-0 shadow-sm bg-white">
+        <div class="container">
+          <div class="collapse navbar-collapse py-3 py-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                    <!-- Link--><a class="nav-link text-uppercase letter-spacing-0" href="index.html">主页</a>
+              </li>
+              <li class="nav-item">
+                    <!-- Link--><a class="nav-link text-uppercase letter-spacing-0" href="#about">关于</a>
+              </li>
+              <li class="nav-item">
+                    <!-- Link--><a class="nav-link text-uppercase letter-spacing-0 active" href="#about">联系</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link text-uppercase letter-spacing-0 dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">更多</a>
+                <div class="dropdown-menu border-0 border-top border-2 border-primary shadow-sm mt-0" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#技术优势">技术优势</a><a class="dropdown-item" href="#我们的架构">我们的架构</a><a class="dropdown-item" href="#我们的服务">我们的服务</a></div>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link px-4 d-inline-block" id="searchToggler" href="#"><i class="fas fa-search text-muted"></i><i class="fas fa-times text-muted d-none"></i></a></li>
+              <li class="nav-item"><a class="nav-link text-uppercase letter-spacing-0 border-start px-4 bg-primary text-white d-inline-block" href="#contact">预约</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="p-3 shadow-sm index-forward border-top" id="search">
+        <div class="container">
+          <form action="#">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="What're you looking for...">
+              <button class="btn btn-primary" type="submit"> <i class="fas fa-search me-2"></i>Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Banner-->
+    <section class="hero-home bg-cover bg-center" style="background: url(img/home-banner.jpg)">
+      <div class="container z-index-20 py-5 mb-5">
+        <div class="row text-white">
+          <div class="col-lg-8">
+            <h1 class="text-uppercase mb-0 text-shadow">就诊无忧</h1>
+            <p class="h5 my-4 text-shadow">您身边的智能医疗陪诊专家</p>
+            <p>致力于打造专业化、人性化的陪诊服务，让每一个人都能在看病过程中感受到关爱与支持。</p><a class="btn btn-light text-primary px-5" href="#!">了解更多</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Info Section-->
+    <section class="info p-0 bg-light">
+      <div class="container">
+        <div class="card border-0">
+          <div class="card-body py-5 border-top border-2 border-primary">
+            <div class="row gy-4">
+              <div class="col-lg-4 border-end">
+                <div class="px-4">
+                  <h3 class="text-primary mb-0 fw-normal">服务人群</h3>
+                  <!-- <h3 class="h5">服务人群</h3> -->
+                  <p class="text-muted mb-0 text-sm">1.子女无法陪同就医的老人；
+                    2.亲属无法陪同体检的孕妇；
+                    3.单独带孩子的家属；
+                    4.独自就诊的青年人；
+                    5.异地就医的人；
+                    6.残障人士。
+                    </p>
+                </div>
+              </div>
+              <div class="col-lg-4 border-end">
+                <div class="px-4">
+                  <h3 class="text-primary mb-0 fw-normal">服务范围</h3>
+                  
+                  <p class="text-muted mb-0 text-sm">
+                    陪诊服务以“临时家人”角色提供全程协助，包括规划就诊流程、取单取药、整理报销材料等，注重效率与便捷；同时给予情绪支持，通过温和沟通和人文关怀舒缓就诊者压力；严格保护隐私，坚守职责边界，不触碰用户个人隐私及贵重物品，不泄露病历信息，不提供医疗建议；并能在紧急情况下提供基础急救服务。
+                    </p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="px-4">
+                  <h3 class="text-primary mb-0 fw-normal">资格认证</h3>
+                  
+                  <p class="text-muted mb-0 text-sm">本平台认证陪诊师需具备专科以上学历，通过心理测试及医院流程、基础医学知识考核，考察其临场应变能力。拥有医师、护士资格或心理咨询师证书及退伍军人优先考虑。平台提供技能培训视频，成功通过测试者可获认证并由平台大数据匹配用户需求。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section-->
+    <section class="about bg-light pt-0">
+      <div class="container text-center">
+        <!-- <h2 class="text-uppercase lined lined-center">Welcome to <span class="text-primary">Medicio </span>Clinic</h2> -->
+        <h2 class="text-uppercase lined lined-center">技术优势</h2>
+        <a name="技术优势"></a>
+        <!-- <p class="text-muted">Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non</p> -->
+        <div class="row pt-5 gy-4 gx-5">
+          <div class="col-lg-4"><i class="fas fa-3x text-primary mb-3 fa-stethoscope"></i>
+            <h2 class="h5">利用大数据，云计算精准实现陪诊服务。</h2>
+            <p class="text-muted mb-0">作为联系患者和陪诊师的纽带，从关系的建立，到陪诊的过程，再到服务的反馈，全程都有大数据、云计算的参与。安全高效的定位供求，使得陪诊项目的推广成为可能。</p>
+          </div>
+          <div class="col-lg-4"><i class="fas fa-3x text-primary mb-3 fa-microscope"></i>
+            <h2 class="h5">简洁，高效的平台增强用户认可度。</h2>
+            <p class="text-muted mb-0">平台反复打磨页面构成，将冰冷的文字可视化，优化算法，让广大用户在使用平台时能迅速找到自己需要的东西，就诊舒心。</p>
+          </div>
+          <div class="col-lg-4"><i class="fas fa-3x text-primary mb-3 fa-syringe"></i>
+            <h2 class="h5">“两微一端”实现与用户的紧密联系。</h2>
+            <p class="text-muted mb-0">“两微一端”指的是微信、微博和新闻客户端。我们将医学科普视频录制后上传网络平台，让用户可以随时随地的进行下载学习；在我们的网络平台上适时发布相关的活动宣传，鼓励关注的用户参与我们的公益活动，帮助有需要的人群。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Statistics Section-->
+    <!-- <section class="statistics py-5 bg-primary">
+      <div class="container text-white">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <h2 class="text-lg me-3 mb-0">15</h2>
+              <p class="lead lh-sm mb-0">years of <br> experience</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <h2 class="text-lg me-3 mb-0">79</h2>
+              <p class="lead lh-sm mb-0">visited <br> conferences</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <h2 class="text-lg me-3 mb-0">452</h2>
+              <p class="lead lh-sm mb-0">smiling <br> clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <h2 class="text-lg me-3 mb-0">14</h2>
+              <p class="lead lh-sm mb-0">master <br> certifications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Prices Section-->
+    <section class="prices">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <h2 class="h5">关于更多</h2>
+          </div>
+          <!-- <div class="col-lg-8">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
+          </div> -->
+        </div>
+        <ul class="nav nav-pills mb-3 flex-column flex-sm-row text-center" id="pills-tab" role="tablist">
+          <li class="nav-item flex-sm-fill"><a class="nav-link active" id="pills-cosmetic-tab" data-bs-toggle="pill" href="#pills-cosmetic" role="tab" aria-controls="pills-cosmetic" aria-selected="true">应用场景</a></li>
+          <li class="nav-item flex-sm-fill"><a class="nav-link" id="pills-Medications-tab" data-bs-toggle="pill" href="#pills-Medications" role="tab" aria-controls="pills-Medications" aria-selected="false">产品特有优势</a></li>
+          <li class="nav-item flex-sm-fill"><a class="nav-link" id="pills-Physician-tab" data-bs-toggle="pill" href="#pills-Physician" role="tab" aria-controls="pills-Physician" aria-selected="false">公益服务</a></li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane py-4 fade show active" id="pills-cosmetic" role="tabpanel" aria-labelledby="pills-cosmetic-tab"> 
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">异地患者就医</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+                  
+                </div>
+                <p class="text-muted text-sm">在陌生的城市，看病茫然无错，对环境不适应，内心无助。 </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">癌症患者就医</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+                 
+                </div>
+                <p class="text-muted text-sm">病程长，病人心理特殊，病人家属负担沉重，精力有限，照顾不周。</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">婴幼儿就医</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+        
+                </div>
+                <p class="text-muted text-sm">大包小包、尿布奶粉，检查候诊、手续缴费……大人辛苦，孩子更辛苦。 </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">孕妇就医</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+
+                </div>
+                <p class="text-muted text-sm">准妈妈在孕期中做繁多的检查，在拥挤嘈杂的医院里，身体更易乏累。 </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">残疾人就医</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+                 
+                </div>
+                <p class="text-muted text-sm">行动不便，看病难上加难。</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">老年人就医</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+                 
+                </div>
+                <p class="text-muted text-sm">子女工作繁忙，担心家里老人看病无人陪同，行动慢，理解力较差，内心孤独。 </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane py-4 fade" id="pills-Medications" role="tabpanel" aria-labelledby="pills-Medications-tab"> 
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">套餐优质人性化：</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+               
+                </div>
+                <p class="text-muted text-sm">平台陪诊方案考虑多种就医的实际情况和对陪诊服务的需求，并依此定制了优质的、多种不同的服务套餐，将服务各个内容具体化、细节化，所制定套餐力求简洁通俗易懂与细致人性化并存。能够用户通过最便捷的方式选择到最高质量的陪诊服务，有利于就医过程中的各项流程、责任准确的划分，减少不必要纠纷，提供更便捷合理的服务。</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">陪诊入职规范化：</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+               
+                </div>
+                <p class="text-muted text-sm">通过为陪诊服务行业的入职流程设立专业的考核、达到行业规范化，从而提高陪诊师职业的整体服务质量和服务态度。</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">权益保障合法化：</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+               
+                </div>
+                <p class="text-muted text-sm">拥有科学完善的规章制度和质量管理体系，包括督察制度、问责制度、追究制度、复命制度、体系建设。彻底将陪诊行业的灰色地带根治，保障每个人的健康安全和合法权益，防止陪诊服务游走在灰色地带。</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">反馈系统完备化：</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+          
+                </div>
+                <p class="text-muted text-sm">设立并落实以用户评价为导向的服务反馈系统，通过对陪诊师的工作和产品进行评判与建议，更加清晰地了解用户的需求与期盼，提升服务内容，提高陪诊师工作的积极性与责任感。</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">多方资源融汇化：</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+               
+                </div>
+                <p class="text-muted text-sm">平台提供的服务涉猎广、周全，如：平台免费提供临床医学知识科普，陪诊师据某一医院内医生值班情况或检查设备水平为就诊者优化就诊路线等；平台与高校、医院合作，积极动员了部分高校志愿者和志愿者医生，使得公益项目落到实处，且影响力更广。 </p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">匹配模式领先化：</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+               
+                </div>
+                <p class="text-muted text-sm">平台将应用大数据配对技术，精准配对高效选择最为合适的陪诊师，供用户自由选择，此项技术在行业中处于领先、前沿。 </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane py-4 fade" id="pills-Physician" role="tabpanel" aria-labelledby="pills-Physician-tab"> 
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">绿色通道</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+                  
+                </div>
+                <p class="text-muted text-sm">不忽略每一个群体</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex align-items-center mb-2">
+                  <h6 class="mb-0">义诊陪诊</h6>
+                  <div class="dotted-separator mx-3 flex-grow-1 my-0"></div>
+
+                </div>
+                <p class="text-muted text-sm">实实在在让乡村老人享受到陪诊</p>
+              </div>
+              <div class=" d-none d-lg-block"><img class="img-fluid" src="img/图片6.jpg" alt="doctor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Departments Section-->
+    <section class="departments pb-0 bg-light">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-5 d-none d-lg-block"><img class="img-fluid" src="img/图片1.png" alt="doctor"></div>
+          <div class="col-lg-7 pb-5 mb-5">
+            <a name="我们的架构"></a>
+            <h2 class="text-uppercase lined">我们的 <span class="text-primary">架构</span></h2>
+            <p class="text-muted mb-5">    </p>
+            <div class="accordion pb-5" id="accordion">
+              <div class="accordion-item border-0 rounded-0 mb-2">
+                <div class="accordion-header p-0 border-0" id="headingOne">
+                  <h6 class="mb-0"><a class="accordion-button py-3 px-4" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-tooth fa-fw me-3 text-primary"></i>资源交融与利用</a></h6>
+                </div>
+                <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="p-4">
+                    <p class="text-muted">平台利用资源包括来自政府、医院、高等院校、敬老院、社区、乡镇卫生服务站等机构的资源。政府可为我们这项响应“健康中国”战略实施的项目提供经济支持和政策帮扶。医院可为平台提供用户资源、医院医疗设备信息、医院值班信息、临床上实践所得的健康知识以及医院所擅长领域的信息等。高等院校志愿服务组织可为敬老院，社区、乡镇卫生服务站等机构提供志愿陪诊服务。
+                      </p>
+                    <!-- <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-0 mb-2">
+                <div class="accordion-header p-0 border-0" id="headingTwo">
+                  <h6 class="mb-0"><a class="accordion-button collapsed py-3 px-4" data-bs-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-brain fa-fw me-3 text-primary"></i>培训师筛选机制</a></h6>
+                </div>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="p-4">
+                    <p class="text-muted mb-0">1、平台要求学历达专科及以上。
+                      2、平台要求申请者首先要进行线上心理测试，符合正常标准后，申请者要进行有关医院就诊流程和基础医学知识的全方位线上考试，并通过设立的不同考验情景，以测试申请者随机应变的能力。力求为患者提供兼具人文关怀素养、责任感、道德感及沟通能力的高质量陪诊师人才，提高就诊效率。
+                        </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 rounded-0">
+                <div class="accordion-header p-0 border-0" id="headingThree">
+                  <h6 class="mb-0"><a class="accordion-button collapsed py-3 px-4" data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-dna fa-fw me-3 text-primary"></i>反馈系统</a></h6>
+                </div>
+                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="p-4">
+                    <p class="text-muted mb-0">平台对用户的评价进行后台人工审核。反馈系统由评分和评价两部分组成，评分高低决定大数据的推送优先级，评价供用户选择陪诊师时阅读。
+                      1、在首页对有特别优秀表现的陪诊师进行宣传，奖金奖励。评分高的可享受平台的优先推送。
+                      2、对于经投诉并证实有不良甚至恶劣行为的陪诊师将被处以罚金，并降低评分。
+                      3、评价标注在陪诊师的个人信息页面，供用户选择时参考。
+                      依靠此系统，平台可监管陪诊师并不断提高陪诊师服务质量。
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div><a class="btn btn-primary w-100" href="#!">查看所有</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section-->
+    <section class="services">
+      <div class="container text-center">
+        <a name="我们的服务"></a>
+        <h2 class="text-uppercase lined lined-center">我们的<span class="text-primary">服务</span></h2>
+        <p class="text-muted mb-5">量身定制的陪诊服务，只为您的无忧就医</p>
+        <div class="row gy-4">
+          <div class="col-xl-3 col-md-6">
+                <!-- Services Item-->
+                <div class="card services-item border-0">
+                  <div class="card-body border-top border-2 border-primary py-5 px-4 shadow-sm">
+                    <h2 class="h6 mb-0 services-item-heading">基本服务</h2>
+                    <div class="services-icon my-4"><i class="fas fa-procedures fa-2x"></i></div>
+                    <p class="services-item-text text-sm mb-0">陪诊人员以类似“临时家人”的身份，帮助用户规划就诊流程，帮助用户取化验单、就诊报告，协助取药，帮助用户整理就诊材料等一系列就诊事务，解答就诊者关于疾病的基本常识类问题。以报销为例，有些人不懂或者出院匆忙，陪诊人员会帮忙汇总发票，住院清单等资料，打印和整理好，再快递过去。帮助用户节省时间和精力，让整个就诊过程更加顺利便捷。</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+                <!-- Services Item-->
+                <div class="card services-item border-0">
+                  <div class="card-body border-top border-2 border-primary py-5 px-4 shadow-sm">
+                    <h2 class="h6 mb-0 services-item-heading">情绪支持</h2>
+                    <div class="services-icon my-4"><i class="fas fa-user-md fa-2x"></i></div>
+                    <p class="services-item-text text-sm mb-0">陪诊人员引导就诊者保持稳定良好的情绪、积极与就诊者沟通。语气温和，待人和善，对用户要有同理心，可以在用户疲惫，难过等必要场景予以鼓励，主动倒杯温水或者送上食物等人文关怀行为。</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+                <!-- Services Item-->
+                <div class="card services-item border-0">
+                  <div class="card-body border-top border-2 border-primary py-5 px-4 shadow-sm">
+                    <h2 class="h6 mb-0 services-item-heading">隐私保护</h2>
+                    <div class="services-icon my-4"><i class="fas fa-notes-medical fa-2x"></i></div>
+                    <p class="services-item-text text-sm mb-0">陪诊人员在某些问题上要有边界，比如职能划分要与护工有所区别，不窥探用户隐私，不调查用户背景，尽量少接触用户贵重物品，不泄漏患者病例和隐私，不给予患者医疗建议等。</p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+                <!-- Services Item-->
+                <div class="card services-item border-0">
+                  <div class="card-body border-top border-2 border-primary py-5 px-4 shadow-sm">
+                    <h2 class="h6 mb-0 services-item-heading">特殊服务</h2>
+                    <div class="services-icon my-4"><i class="fas fa-ambulance fa-2x"></i></div>
+                    <p class="services-item-text text-sm mb-0">若发生紧急情况，陪诊人员会为病人提供急救服务。</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Doctors Section-->
+    <section class="doctors bg-light">
+      <div class="container text-center">
+        <h2 class="text-uppercase lined lined-center"><span class="text-primary">公益效应</span></h2>
+        
+        <div class="row gy-4">
+          <div class="col-xl-6 col-md-8">
+                <!-- Doctor-->
+                <div class="card doctor border-0">
+                  <div class="card-body p-0 shadow-sm">
+                    <div class="position-relative"><img class="img-fluid border-top border-2 border-primary" src="img/图片2.png" alt="...">
+                      <div class="doctor-overlay">   
+                       
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <h6 class="mb-0">教育伴行——培养医疗人才的后备军</h6>
+                      <p class="text-muted text-sm mb-0">党的二十大报告寄语青年：“青年强，则国家强。当代中国青年生逢其时，施展才干的舞台无比广阔，实现梦想的前景无比光明。”本公司通过与医学高等院校的合作对医学生进行有关陪诊志愿服务的培训，为他们提供了明确的志愿服务对象和途径，减少了成员之间矛盾的产生，有效弥补了高校在志愿服务活动建设中存在的不足。</p>
+                    </div><a class="btn btn-primary w-100" href="#!"></a>
+                  </div>
+                </div>
+          </div>
+         
+          <div class="col-xl-6 col-md-8">
+                <!-- Doctor-->
+                <div class="card doctor border-0">
+                  <div class="card-body p-0 shadow-sm">
+                    <div class="position-relative"><img class="img-fluid border-top border-2 border-primary" src="img/图片3.jpg" alt="...">
+                      <div class="doctor-overlay">   
+                       
+                      </div>
+                    </div>
+                    <div class="p-4">
+                      <h6 class="mb-0">推动改革——促进医疗体系的完善</h6>
+                      <p class="text-muted text-sm mb-0">挂号难、看病难是时常萦绕在人们嘴边的话语，但本平台的存在能够成为医生与患者、家属之间的桥梁，能够有效调和、协助双方进行工作、解决需求。由于医院病人多，医生的面诊时间有限，一些患者可能短时间内难以理解病情发展和治疗方案，而陪诊师大多具有一定的专业知识，可以协助患者就医，提升就诊效率，促进医患关系。</p>
+                    </div><a class="btn btn-primary w-100" href="#!"></a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Opening Hours-->
+    <!-- <section class="overflow-hidden">
+      <div class="container">
+        <h2 class="text-uppercase lined">Working  <span class="text-primary">Hours</span></h2>
+        <p class="text-muted mb-5">Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit auctor aliquetenean.</p>
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <div class="card shadow-sm border-0">
+              <div class="card-body border-top border-2 border-primary py-4 px-lg-5">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4"><strong class="h6 mb-0">Monday </strong><span class="mb-0">9:00 am - 06:00 pm</span>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4 bg-light"><strong class="h6 mb-0">Tuesday </strong><span class="mb-0">9:00 am - 06:00 pm</span>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4"><strong class="h6 mb-0">Wednesday </strong><span class="mb-0">9:00 am - 06:00 pm</span>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4 bg-light"><strong class="h6 mb-0">Friday </strong><span class="mb-0">9:00 am - 06:00 pm</span>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4"><strong class="h6 mb-0">Saturday </strong><strong class="h6 mb-0 text-uppercase text-primary">Closed</strong>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4 bg-light"><strong class="h6 mb-0">Sunday </strong><strong class="h6 mb-0 text-uppercase text-primary">Closed</strong>
+                  </li>
+                  <li class="d-flex align-items-center justify-content-between py-3 px-4"><strong class="h6 mb-0"> </strong><span class="mb-0"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center"><i class="fas fa-first-aid fa-4x text-primary mb-4">   </i>
+            <h3 class="h4">Emergency Case</h3>
+            <p class="text-muted mb-3 px-lg-5">If you need a doctor urgently outside of medicenter opening hours, call emergency appointment number for emergency service.</p>
+            <div class="text-primary"><a class="btn btn-lg btn-outline-primary h5 px-4 py-3" href="tel:080024667921"> <i class="fas fa-phone-square me-2"></i>+ 0800 2466 7921</a></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Contact Section-->
+    <!-- <section class="contact py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="ms-3">       
+                <h3 class="h5 mb-0">0800 2466 7921</h3>
+                <p class="small mb-0">Have a question? call us now</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center">
+              <div class="contact-icon"><i class="far fa-envelope"></i></div>
+              <div class="ms-3">       
+                <h3 class="h5 mb-0">info@domain.com</h3>
+                <p class="small mb-0">Need support? Drop us an email</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center">
+              <div class="contact-icon"><i class="far fa-clock"></i></div>
+              <div class="ms-3">       
+                <h3 class="h5 mb-0">Mon – Fri 07:00 – 21:00</h3>
+                <p class="small mb-0">We are open On</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!-- 联系我们 -->
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-5 border-top border-primary border-2">
+              <a name="contact"></a>
+              <h2 class="lined">预约</span></h2>
+              <!-- <p class="text-muted mb-4">Nulla tristique ipsum in quam. Integer ac elit. Duis turpis faucibus non</p> -->
+              <form class="make-appointment-form" action="!#">
+                <div class="row gy-4">
+                  <div class="col-lg-6">
+                    <input class="form-control" type="text" name="firstName" placeholder="名字">
+                  </div>
+                  <div class="col-lg-6">
+                    <input class="form-control" type="text" name="lastName" placeholder="姓">
+                  </div>
+                  <div class="col-lg-6">
+                    <input class="form-control" type="tel" name="phone" placeholder="手机号">
+                  </div>
+                  <!-- <div class="col-lg-6">
+                    <input class="form-control" type="text" name="date" placeholder="预约日期">
+                  </div> -->
+                  <div class="col-lg-6">
+                    <select class="form-select" name="gender">
+                      <option value="male">男</option>
+                      <option value="female">女</option>
+                    </select>
+                  </div>
+                  <!-- <div class="col-lg-6">
+                    <select class="form-select" name="department">
+                      <option value="">Department</option>
+                      <option value="medicine">Medicine</option>
+                      <option value="dental">Dental Care </option>
+                      <option value="traumatology">Traumatology</option>
+                    </select>
+                  </div> -->
+                  <!-- <div class="col-lg-12">
+                    <textarea class="form-control" name="sepcialRequest" rows="5" placeholder="Special Request"></textarea>
+                  </div> -->
+                  <div class="col-lg-12">
+                    <button class="btn btn-primary w-100" type="submit">提交</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer pt-5">
+      <div class="container pt-5">
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <a name="about"></a>
+            <h2 class="h5 lined text-white mb-4">关于</h2>
+            <p class="text-muted text-sm">安徽就诊无忧股份有限公司</p>
+            <!-- <p class="text-muted text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-google-plus"></i></a></li>
+              <li class="list-inline-item"><a class="social-link" href="#!"><i class="fab fa-instagram"></i></a></li>
+            </ul> -->
+          </div>
+          <!-- <div class="col-lg-5">
+            <h2 class="h5 text-white lined mb-4">Quick Links</h2>
+            <div class="d-flex">
+              <ul class="list-unstyled d-inline-block me-4 mb-0">
+                <li class="mb-2"><a class="footer-link" href="#!">Make appointments</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">Doctors team</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">Departments services</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">About our clinic</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">Contact us</a></li>
+              </ul>
+              <ul class="list-unstyled d-inline-block mb-0">
+                <li class="mb-2"><a class="footer-link" href="index.html">Home </a></li>
+                <li class="mb-2"><a class="footer-link" href="about.html">About us </a></li>
+                <li class="mb-2"><a class="footer-link" href="contact.html">Contact us </a></li>
+                <li class="mb-2"><a class="footer-link" href="#">About our clinic </a></li>
+                <li class="mb-2"><a class="footer-link" href="#">Contact us </a></li>
+              </ul>
+            </div>
+          </div> -->
+          <!-- <div class="col-lg-4">
+            <h2 class="h5 text-white lined mb-4">Newsletter</h2>
+            <p class="text-muted text-sm">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+            <div class="input-group mb-3">
+              <input class="form-control text-muted bg-none border-primary" type="text" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="copyrights">       
+        <div class="container text-center py-4">
+          <p class="mb-0 text-muted text-sm">&copy;, 安徽就诊无忧股份有限公司 <a target="_blank" href="" title=""></a>.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
